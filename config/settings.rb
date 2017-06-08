@@ -2,7 +2,7 @@ class Settings
   extend Mixlib::Config
 
   config_context :mongoid do
-    default(:uri, ENV['MONGO_URI'])
+    default(:uri, ENV['MONGODB_URI'])
   end
 
   config_context :twitter do
